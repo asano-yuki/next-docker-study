@@ -1,0 +1,10 @@
+version: '3'
+services:
+  front:
+    build: ./front
+    container_name: front
+    volumes:
+      - ./front:/usr/src/app
+    ports:
+      - 3000:3000
+    tty: true
